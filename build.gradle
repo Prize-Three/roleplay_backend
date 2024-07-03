@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+
     //jpa
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
@@ -37,6 +38,10 @@ dependencies {
     //lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    //test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     //swagger
     implementation group: 'io.swagger.core.v3', name: 'swagger-annotations', version: '2.2.20'
